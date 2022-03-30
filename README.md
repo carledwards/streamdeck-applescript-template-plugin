@@ -1,0 +1,1 @@
+# streamdeck-applescript-template-plugin
