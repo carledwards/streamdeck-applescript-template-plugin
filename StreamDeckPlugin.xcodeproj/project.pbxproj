@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39657B1027F4DB72009EBE47 /* ESDMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39657B0F27F4DB72009EBE47 /* ESDMain.swift */; };
+		39657C4B27F4F01C009EBE47 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C1927F4F01C009EBE47 /* SRWebSocket.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations -Wno-implicit-retain-self"; }; };
+		39657C4C27F4F01C009EBE47 /* NSRunLoop+SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C1A27F4F01C009EBE47 /* NSRunLoop+SRWebSocket.m */; };
+		39657C4D27F4F01D009EBE47 /* SRSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C1D27F4F01C009EBE47 /* SRSecurityPolicy.m */; };
+		39657C4E27F4F01D009EBE47 /* SRProxyConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C2227F4F01C009EBE47 /* SRProxyConnect.m */; };
+		39657C4F27F4F01D009EBE47 /* SRRunLoopThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C2627F4F01C009EBE47 /* SRRunLoopThread.m */; };
+		39657C5027F4F01D009EBE47 /* SRPinningSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C2927F4F01C009EBE47 /* SRPinningSecurityPolicy.m */; };
+		39657C5127F4F01D009EBE47 /* SRDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C2C27F4F01C009EBE47 /* SRDelegateController.m */; settings = {COMPILER_FLAGS = "-Wno-implicit-retain-self"; }; };
+		39657C5227F4F01D009EBE47 /* SRMutex.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C3227F4F01C009EBE47 /* SRMutex.m */; };
+		39657C5327F4F01D009EBE47 /* SRHTTPConnectMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C3327F4F01C009EBE47 /* SRHTTPConnectMessage.m */; };
+		39657C5427F4F01D009EBE47 /* SRURLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C3627F4F01C009EBE47 /* SRURLUtilities.m */; settings = {COMPILER_FLAGS = "-Wno-switch"; }; };
+		39657C5527F4F01D009EBE47 /* SRLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C3827F4F01C009EBE47 /* SRLog.m */; };
+		39657C5627F4F01D009EBE47 /* SRHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C3927F4F01C009EBE47 /* SRHash.m */; };
+		39657C5727F4F01D009EBE47 /* SRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C3C27F4F01C009EBE47 /* SRError.m */; };
+		39657C5827F4F01D009EBE47 /* SRRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C3D27F4F01C009EBE47 /* SRRandom.m */; };
+		39657C5927F4F01D009EBE47 /* SRSIMDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C3F27F4F01C009EBE47 /* SRSIMDHelpers.m */; };
+		39657C5A27F4F01D009EBE47 /* SRIOConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C4227F4F01C009EBE47 /* SRIOConsumer.m */; };
+		39657C5B27F4F01D009EBE47 /* SRIOConsumerPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C4427F4F01C009EBE47 /* SRIOConsumerPool.m */; };
+		39657C5C27F4F01D009EBE47 /* SRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C4527F4F01C009EBE47 /* SRConstants.m */; };
+		39657C5D27F4F01D009EBE47 /* NSURLRequest+SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C4A27F4F01C009EBE47 /* NSURLRequest+SRWebSocket.m */; };
+		39657C6627F4F027009EBE47 /* ESDConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C5F27F4F026009EBE47 /* ESDConnectionManager.m */; };
+		39657C6727F4F027009EBE47 /* ESDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C6027F4F026009EBE47 /* ESDUtilities.m */; };
+		39657C6B27F501D2009EBE47 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 39657C6A27F501D2009EBE47 /* ArgumentParser */; };
+		39657C6D27F60906009EBE47 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39657C6C27F60906009EBE47 /* Plugin.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39657B0A27F4DB72009EBE47 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		39657B0C27F4DB72009EBE47 /* StreamDeckPlugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StreamDeckPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		39657B0F27F4DB72009EBE47 /* ESDMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESDMain.swift; sourceTree = "<group>"; };
+		39657B1827F4E13F009EBE47 /* StreamDeckPlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreamDeckPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
+		39657C1927F4F01C009EBE47 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		39657C1A27F4F01C009EBE47 /* NSRunLoop+SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRunLoop+SRWebSocket.m"; sourceTree = "<group>"; };
+		39657C1C27F4F01C009EBE47 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39657C1D27F4F01C009EBE47 /* SRSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSecurityPolicy.m; sourceTree = "<group>"; };
+		39657C1E27F4F01C009EBE47 /* SocketRocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRocket.h; sourceTree = "<group>"; };
+		39657C2027F4F01C009EBE47 /* SRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRConstants.h; sourceTree = "<group>"; };
+		39657C2227F4F01C009EBE47 /* SRProxyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRProxyConnect.m; sourceTree = "<group>"; };
+		39657C2327F4F01C009EBE47 /* SRProxyConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRProxyConnect.h; sourceTree = "<group>"; };
+		39657C2527F4F01C009EBE47 /* SRRunLoopThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRunLoopThread.h; sourceTree = "<group>"; };
+		39657C2627F4F01C009EBE47 /* SRRunLoopThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRunLoopThread.m; sourceTree = "<group>"; };
+		39657C2827F4F01C009EBE47 /* SRPinningSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPinningSecurityPolicy.h; sourceTree = "<group>"; };
+		39657C2927F4F01C009EBE47 /* SRPinningSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPinningSecurityPolicy.m; sourceTree = "<group>"; };
+		39657C2A27F4F01C009EBE47 /* NSRunLoop+SRWebSocketPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+SRWebSocketPrivate.h"; sourceTree = "<group>"; };
+		39657C2C27F4F01C009EBE47 /* SRDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDelegateController.m; sourceTree = "<group>"; };
+		39657C2D27F4F01C009EBE47 /* SRDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDelegateController.h; sourceTree = "<group>"; };
+		39657C2E27F4F01C009EBE47 /* NSURLRequest+SRWebSocketPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SRWebSocketPrivate.h"; sourceTree = "<group>"; };
+		39657C3027F4F01C009EBE47 /* SRHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRHash.h; sourceTree = "<group>"; };
+		39657C3127F4F01C009EBE47 /* SRLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLog.h; sourceTree = "<group>"; };
+		39657C3227F4F01C009EBE47 /* SRMutex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMutex.m; sourceTree = "<group>"; };
+		39657C3327F4F01C009EBE47 /* SRHTTPConnectMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRHTTPConnectMessage.m; sourceTree = "<group>"; };
+		39657C3427F4F01C009EBE47 /* SRSIMDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSIMDHelpers.h; sourceTree = "<group>"; };
+		39657C3527F4F01C009EBE47 /* SRRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRandom.h; sourceTree = "<group>"; };
+		39657C3627F4F01C009EBE47 /* SRURLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRURLUtilities.m; sourceTree = "<group>"; };
+		39657C3727F4F01C009EBE47 /* SRError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRError.h; sourceTree = "<group>"; };
+		39657C3827F4F01C009EBE47 /* SRLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLog.m; sourceTree = "<group>"; };
+		39657C3927F4F01C009EBE47 /* SRHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRHash.m; sourceTree = "<group>"; };
+		39657C3A27F4F01C009EBE47 /* SRMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRMutex.h; sourceTree = "<group>"; };
+		39657C3B27F4F01C009EBE47 /* SRHTTPConnectMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRHTTPConnectMessage.h; sourceTree = "<group>"; };
+		39657C3C27F4F01C009EBE47 /* SRError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRError.m; sourceTree = "<group>"; };
+		39657C3D27F4F01C009EBE47 /* SRRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRandom.m; sourceTree = "<group>"; };
+		39657C3E27F4F01C009EBE47 /* SRURLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRURLUtilities.h; sourceTree = "<group>"; };
+		39657C3F27F4F01C009EBE47 /* SRSIMDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSIMDHelpers.m; sourceTree = "<group>"; };
+		39657C4127F4F01C009EBE47 /* SRIOConsumerPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRIOConsumerPool.h; sourceTree = "<group>"; };
+		39657C4227F4F01C009EBE47 /* SRIOConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRIOConsumer.m; sourceTree = "<group>"; };
+		39657C4327F4F01C009EBE47 /* SRIOConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRIOConsumer.h; sourceTree = "<group>"; };
+		39657C4427F4F01C009EBE47 /* SRIOConsumerPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRIOConsumerPool.m; sourceTree = "<group>"; };
+		39657C4527F4F01C009EBE47 /* SRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRConstants.m; sourceTree = "<group>"; };
+		39657C4627F4F01C009EBE47 /* NSURLRequest+SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SRWebSocket.h"; sourceTree = "<group>"; };
+		39657C4727F4F01C009EBE47 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		39657C4827F4F01C009EBE47 /* NSRunLoop+SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+SRWebSocket.h"; sourceTree = "<group>"; };
+		39657C4927F4F01C009EBE47 /* SRSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSecurityPolicy.h; sourceTree = "<group>"; };
+		39657C4A27F4F01C009EBE47 /* NSURLRequest+SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SRWebSocket.m"; sourceTree = "<group>"; };
+		39657C5F27F4F026009EBE47 /* ESDConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDConnectionManager.m; sourceTree = "<group>"; };
+		39657C6027F4F026009EBE47 /* ESDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDUtilities.m; sourceTree = "<group>"; };
+		39657C6127F4F027009EBE47 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39657C6227F4F027009EBE47 /* ESDConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDConnectionManager.h; sourceTree = "<group>"; };
+		39657C6327F4F027009EBE47 /* ESDSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDSDKDefines.h; sourceTree = "<group>"; };
+		39657C6427F4F027009EBE47 /* ESDEventsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDEventsProtocol.h; sourceTree = "<group>"; };
+		39657C6527F4F027009EBE47 /* ESDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDUtilities.h; sourceTree = "<group>"; };
+		39657C6C27F60906009EBE47 /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39657B0927F4DB72009EBE47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39657C6B27F501D2009EBE47 /* ArgumentParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39657B0327F4DB72009EBE47 = {
+			isa = PBXGroup;
+			children = (
+				39657B0E27F4DB72009EBE47 /* StreamDeckPlugin */,
+				39657B0D27F4DB72009EBE47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39657B0D27F4DB72009EBE47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39657B0C27F4DB72009EBE47 /* StreamDeckPlugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39657B0E27F4DB72009EBE47 /* StreamDeckPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				39657C5E27F4F026009EBE47 /* StreamDeck */,
+				39657C1827F4F01C009EBE47 /* SocketRocket */,
+				39657C6C27F60906009EBE47 /* Plugin.swift */,
+			);
+			path = StreamDeckPlugin;
+			sourceTree = "<group>";
+		};
+		39657C1827F4F01C009EBE47 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				39657C1927F4F01C009EBE47 /* SRWebSocket.m */,
+				39657C1A27F4F01C009EBE47 /* NSRunLoop+SRWebSocket.m */,
+				39657C1B27F4F01C009EBE47 /* Resources */,
+				39657C1D27F4F01C009EBE47 /* SRSecurityPolicy.m */,
+				39657C1E27F4F01C009EBE47 /* SocketRocket.h */,
+				39657C1F27F4F01C009EBE47 /* Internal */,
+				39657C4627F4F01C009EBE47 /* NSURLRequest+SRWebSocket.h */,
+				39657C4727F4F01C009EBE47 /* SRWebSocket.h */,
+				39657C4827F4F01C009EBE47 /* NSRunLoop+SRWebSocket.h */,
+				39657C4927F4F01C009EBE47 /* SRSecurityPolicy.h */,
+				39657C4A27F4F01C009EBE47 /* NSURLRequest+SRWebSocket.m */,
+			);
+			name = SocketRocket;
+			path = Vendor/SocketRocket/SocketRocket;
+			sourceTree = "<group>";
+		};
+		39657C1B27F4F01C009EBE47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39657C1C27F4F01C009EBE47 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		39657C1F27F4F01C009EBE47 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				39657C2027F4F01C009EBE47 /* SRConstants.h */,
+				39657C2127F4F01C009EBE47 /* Proxy */,
+				39657C2427F4F01C009EBE47 /* RunLoop */,
+				39657C2727F4F01C009EBE47 /* Security */,
+				39657C2A27F4F01C009EBE47 /* NSRunLoop+SRWebSocketPrivate.h */,
+				39657C2B27F4F01C009EBE47 /* Delegate */,
+				39657C2E27F4F01C009EBE47 /* NSURLRequest+SRWebSocketPrivate.h */,
+				39657C2F27F4F01C009EBE47 /* Utilities */,
+				39657C4027F4F01C009EBE47 /* IOConsumer */,
+				39657C4527F4F01C009EBE47 /* SRConstants.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		39657C2127F4F01C009EBE47 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				39657C2227F4F01C009EBE47 /* SRProxyConnect.m */,
+				39657C2327F4F01C009EBE47 /* SRProxyConnect.h */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		39657C2427F4F01C009EBE47 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				39657C2527F4F01C009EBE47 /* SRRunLoopThread.h */,
+				39657C2627F4F01C009EBE47 /* SRRunLoopThread.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		39657C2727F4F01C009EBE47 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				39657C2827F4F01C009EBE47 /* SRPinningSecurityPolicy.h */,
+				39657C2927F4F01C009EBE47 /* SRPinningSecurityPolicy.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		39657C2B27F4F01C009EBE47 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				39657C2C27F4F01C009EBE47 /* SRDelegateController.m */,
+				39657C2D27F4F01C009EBE47 /* SRDelegateController.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		39657C2F27F4F01C009EBE47 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				39657C3027F4F01C009EBE47 /* SRHash.h */,
+				39657C3127F4F01C009EBE47 /* SRLog.h */,
+				39657C3227F4F01C009EBE47 /* SRMutex.m */,
+				39657C3327F4F01C009EBE47 /* SRHTTPConnectMessage.m */,
+				39657C3427F4F01C009EBE47 /* SRSIMDHelpers.h */,
+				39657C3527F4F01C009EBE47 /* SRRandom.h */,
+				39657C3627F4F01C009EBE47 /* SRURLUtilities.m */,
+				39657C3727F4F01C009EBE47 /* SRError.h */,
+				39657C3827F4F01C009EBE47 /* SRLog.m */,
+				39657C3927F4F01C009EBE47 /* SRHash.m */,
+				39657C3A27F4F01C009EBE47 /* SRMutex.h */,
+				39657C3B27F4F01C009EBE47 /* SRHTTPConnectMessage.h */,
+				39657C3C27F4F01C009EBE47 /* SRError.m */,
+				39657C3D27F4F01C009EBE47 /* SRRandom.m */,
+				39657C3E27F4F01C009EBE47 /* SRURLUtilities.h */,
+				39657C3F27F4F01C009EBE47 /* SRSIMDHelpers.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		39657C4027F4F01C009EBE47 /* IOConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				39657C4127F4F01C009EBE47 /* SRIOConsumerPool.h */,
+				39657C4227F4F01C009EBE47 /* SRIOConsumer.m */,
+				39657C4327F4F01C009EBE47 /* SRIOConsumer.h */,
+				39657C4427F4F01C009EBE47 /* SRIOConsumerPool.m */,
+			);
+			path = IOConsumer;
+			sourceTree = "<group>";
+		};
+		39657C5E27F4F026009EBE47 /* StreamDeck */ = {
+			isa = PBXGroup;
+			children = (
+				39657C5F27F4F026009EBE47 /* ESDConnectionManager.m */,
+				39657C6027F4F026009EBE47 /* ESDUtilities.m */,
+				39657C6127F4F027009EBE47 /* main.m */,
+				39657B0F27F4DB72009EBE47 /* ESDMain.swift */,
+				39657C6227F4F027009EBE47 /* ESDConnectionManager.h */,
+				39657C6327F4F027009EBE47 /* ESDSDKDefines.h */,
+				39657C6427F4F027009EBE47 /* ESDEventsProtocol.h */,
+				39657C6527F4F027009EBE47 /* ESDUtilities.h */,
+				39657B1827F4E13F009EBE47 /* StreamDeckPlugin-Bridging-Header.h */,
+			);
+			name = StreamDeck;
+			path = Vendor/StreamDeck;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39657B0B27F4DB72009EBE47 /* StreamDeckPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39657B1327F4DB72009EBE47 /* Build configuration list for PBXNativeTarget "StreamDeckPlugin" */;
+			buildPhases = (
+				39657B0827F4DB72009EBE47 /* Sources */,
+				39657B0927F4DB72009EBE47 /* Frameworks */,
+				39657B0A27F4DB72009EBE47 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamDeckPlugin;
+			packageProductDependencies = (
+				39657C6A27F501D2009EBE47 /* ArgumentParser */,
+			);
+			productName = StreamDeckPlugin;
+			productReference = 39657B0C27F4DB72009EBE47 /* StreamDeckPlugin */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39657B0427F4DB72009EBE47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					39657B0B27F4DB72009EBE47 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 39657B0727F4DB72009EBE47 /* Build configuration list for PBXProject "StreamDeckPlugin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39657B0327F4DB72009EBE47;
+			packageReferences = (
+				39657C6927F501D2009EBE47 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
+			productRefGroup = 39657B0D27F4DB72009EBE47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39657B0B27F4DB72009EBE47 /* StreamDeckPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39657B0827F4DB72009EBE47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39657C4B27F4F01C009EBE47 /* SRWebSocket.m in Sources */,
+				39657C5027F4F01D009EBE47 /* SRPinningSecurityPolicy.m in Sources */,
+				39657C4E27F4F01D009EBE47 /* SRProxyConnect.m in Sources */,
+				39657C6627F4F027009EBE47 /* ESDConnectionManager.m in Sources */,
+				39657C4F27F4F01D009EBE47 /* SRRunLoopThread.m in Sources */,
+				39657C6D27F60906009EBE47 /* Plugin.swift in Sources */,
+				39657C4C27F4F01C009EBE47 /* NSRunLoop+SRWebSocket.m in Sources */,
+				39657C5827F4F01D009EBE47 /* SRRandom.m in Sources */,
+				39657C5127F4F01D009EBE47 /* SRDelegateController.m in Sources */,
+				39657C5C27F4F01D009EBE47 /* SRConstants.m in Sources */,
+				39657C5427F4F01D009EBE47 /* SRURLUtilities.m in Sources */,
+				39657C5D27F4F01D009EBE47 /* NSURLRequest+SRWebSocket.m in Sources */,
+				39657C6727F4F027009EBE47 /* ESDUtilities.m in Sources */,
+				39657C5727F4F01D009EBE47 /* SRError.m in Sources */,
+				39657C5227F4F01D009EBE47 /* SRMutex.m in Sources */,
+				39657C5B27F4F01D009EBE47 /* SRIOConsumerPool.m in Sources */,
+				39657C4D27F4F01D009EBE47 /* SRSecurityPolicy.m in Sources */,
+				39657C5A27F4F01D009EBE47 /* SRIOConsumer.m in Sources */,
+				39657C5627F4F01D009EBE47 /* SRHash.m in Sources */,
+				39657C5527F4F01D009EBE47 /* SRLog.m in Sources */,
+				39657B1027F4DB72009EBE47 /* ESDMain.swift in Sources */,
+				39657C5327F4F01D009EBE47 /* SRHTTPConnectMessage.m in Sources */,
+				39657C5927F4F01D009EBE47 /* SRSIMDHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		39657B1127F4DB72009EBE47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39657B1227F4DB72009EBE47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		39657B1427F4DB72009EBE47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/StreamDeckPlugin/Vendor/SocketRocket\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/carledwards/dev/github/streamdeck-applescript-template-plugin/StreamDeckPlugin/StreamDeckPlugin-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		39657B1527F4DB72009EBE47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/StreamDeckPlugin/Vendor/SocketRocket\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/carledwards/dev/github/streamdeck-applescript-template-plugin/StreamDeckPlugin/StreamDeckPlugin-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39657B0727F4DB72009EBE47 /* Build configuration list for PBXProject "StreamDeckPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39657B1127F4DB72009EBE47 /* Debug */,
+				39657B1227F4DB72009EBE47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39657B1327F4DB72009EBE47 /* Build configuration list for PBXNativeTarget "StreamDeckPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39657B1427F4DB72009EBE47 /* Debug */,
+				39657B1527F4DB72009EBE47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39657C6927F501D2009EBE47 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39657C6A27F501D2009EBE47 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39657C6927F501D2009EBE47 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 39657B0427F4DB72009EBE47 /* Project object */;
+}

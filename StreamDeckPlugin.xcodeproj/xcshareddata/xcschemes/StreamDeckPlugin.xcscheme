@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1330"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "39657B0B27F4DB72009EBE47"
+               BuildableName = "StreamDeckPlugin"
+               BlueprintName = "StreamDeckPlugin"
+               ReferencedContainer = "container:StreamDeckPlugin.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "39657B0B27F4DB72009EBE47"
+            BuildableName = "StreamDeckPlugin"
+            BlueprintName = "StreamDeckPlugin"
+            ReferencedContainer = "container:StreamDeckPlugin.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-port 28196"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-pluginUUID 2BD8BB2AB867F24728A73F16AD6F670F"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-registerEvent registerPlugin"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-info {&quot;application&quot;:{&quot;font&quot;:&quot;.AppleSystemUIFont&quot;,&quot;language&quot;:&quot;en&quot;,&quot;platform&quot;:&quot;mac&quot;,&quot;platformVersion&quot;:&quot;12.3.0&quot;,&quot;version&quot;:&quot;5.2.1.15025&quot;},&quot;colors&quot;:{&quot;buttonPressedBackgroundColor&quot;:&quot;#303030FF&quot;,&quot;buttonPressedBorderColor&quot;:&quot;#646464FF&quot;,&quot;buttonPressedTextColor&quot;:&quot;#969696FF&quot;,&quot;disabledColor&quot;:&quot;#007AFF7F&quot;,&quot;highlightColor&quot;:&quot;#007AFFFF&quot;,&quot;mouseDownColor&quot;:&quot;#2EA8FFFF&quot;},&quot;devicePixelRatio&quot;:1,&quot;devices&quot;:[{&quot;id&quot;:&quot;3C12F41C35DACAA63A82AA03AA0BFC3E&quot;,&quot;name&quot;:&quot;Stream Deck&quot;,&quot;size&quot;:{&quot;columns&quot;:5,&quot;rows&quot;:3},&quot;type&quot;:0}],&quot;plugin&quot;:{&quot;uuid&quot;:&quot;com.lostdomain.zoom&quot;,&quot;version&quot;:&quot;3.0&quot;}}"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "39657B0B27F4DB72009EBE47"
+            BuildableName = "StreamDeckPlugin"
+            BlueprintName = "StreamDeckPlugin"
+            ReferencedContainer = "container:StreamDeckPlugin.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
