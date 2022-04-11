@@ -8,7 +8,7 @@
 #ifndef StreamDeckPlugin_Bridging_Header_h
 #define StreamDeckPlugin_Bridging_Header_h
 
-#import "Vendor/StreamDeck/ESDConnectionManager.h"
-#import "Vendor/StreamDeck/ESDSDKDefines.h"
+#import "ESDConnectionManager.h"
+#import "ESDSDKDefines.h"
 
 #endif /* StreamDeckPlugin_Bridging_Header_h */

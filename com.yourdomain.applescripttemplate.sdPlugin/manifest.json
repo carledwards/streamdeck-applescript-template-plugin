@@ -1,0 +1,38 @@
+{
+  "Actions": [
+    {
+      "States": [
+        {
+          "Image": "AppleScriptIcon",
+          "FontSize": "18", 
+          "FontStyle": "Bold", 
+          "TitleAlignment": "middle", 
+          "TitleColor": "#ffffff"
+        }
+      ], 
+      "SupportedInMultiActions": true,
+      "Icon": "AppleScriptActionIcon", 
+      "Name": "Apple Script Template", 
+      "Tooltip": "Execute an embedded AppleScript", 
+      "UUID": "com.yourdomain.applescripttemplate.action"
+    }
+  ], 
+  "SDKVersion": 2,
+  "Author": "Carl Edwards", 
+  "CodePath": "AppleScriptTemplateSDPlugin", 
+  "Description": "Execute an embedded AppleScript.", 
+  "Name": "Apple Script Template", 
+  "Icon": "AppleScriptIcon", 
+  "URL": "https://github.com/carledwards/streamdeck-applescript-template-plugin", 
+  "Version": "1.0.0",
+  "OS": [
+    {
+        "Platform": "mac", 
+        "MinimumVersion" : "12.3"
+    }
+  ],
+  "Software": 
+    {
+        "MinimumVersion" : "5.2.1"
+    }
+}

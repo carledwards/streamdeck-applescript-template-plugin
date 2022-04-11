@@ -1,0 +1,8 @@
+{
+  "Description": "Execute an embedded AppleScript.", 
+  "Name": "Apple Script Template", 
+  "com.yourdomain.applescripttemplate.action": {
+    "Name": "Apple Script Template", 
+    "Tooltip": "Execute an embedded AppleScript"
+  }
+}

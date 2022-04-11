@@ -31,22 +31,25 @@
 		39657C6727F4F027009EBE47 /* ESDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 39657C6027F4F026009EBE47 /* ESDUtilities.m */; };
 		39657C6B27F501D2009EBE47 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 39657C6A27F501D2009EBE47 /* ArgumentParser */; };
 		39657C6D27F60906009EBE47 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39657C6C27F60906009EBE47 /* Plugin.swift */; };
+		3974364327FD0A68004B3EE9 /* appleScriptTemplateSDPlugin in Copy Files */ = {isa = PBXBuildFile; fileRef = 39657B0C27F4DB72009EBE47 /* appleScriptTemplateSDPlugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		39657B0A27F4DB72009EBE47 /* CopyFiles */ = {
+		39657B0A27F4DB72009EBE47 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = "${PROJECT_DIR}/com.yourdomain.appleScriptTemplate.sdPlugin";
 			dstSubfolderSpec = 0;
 			files = (
+				3974364327FD0A68004B3EE9 /* appleScriptTemplateSDPlugin in Copy Files */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		39657B0C27F4DB72009EBE47 /* StreamDeckPlugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StreamDeckPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		39657B0C27F4DB72009EBE47 /* appleScriptTemplateSDPlugin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = appleScriptTemplateSDPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		39657B0F27F4DB72009EBE47 /* ESDMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESDMain.swift; sourceTree = "<group>"; };
 		39657B1827F4E13F009EBE47 /* StreamDeckPlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreamDeckPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
 		39657C1927F4F01C009EBE47 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
@@ -124,7 +127,7 @@
 		39657B0D27F4DB72009EBE47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				39657B0C27F4DB72009EBE47 /* StreamDeckPlugin */,
+				39657B0C27F4DB72009EBE47 /* appleScriptTemplateSDPlugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,7 +282,8 @@
 			buildPhases = (
 				39657B0827F4DB72009EBE47 /* Sources */,
 				39657B0927F4DB72009EBE47 /* Frameworks */,
-				39657B0A27F4DB72009EBE47 /* CopyFiles */,
+				39657B0A27F4DB72009EBE47 /* Copy Files */,
+				397436472803CA21004B3EE9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -290,7 +294,7 @@
 				39657C6A27F501D2009EBE47 /* ArgumentParser */,
 			);
 			productName = StreamDeckPlugin;
-			productReference = 39657B0C27F4DB72009EBE47 /* StreamDeckPlugin */;
+			productReference = 39657B0C27F4DB72009EBE47 /* appleScriptTemplateSDPlugin */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -328,6 +332,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		397436472803CA21004B3EE9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nOUTPUT_FILE=${PROJECT_DIR}/com.yourdomain.applescripttemplate.streamDeckPlugin\n[ -e \"${OUTPUT_FILE}\" ] && rm \"${OUTPUT_FILE}\"\n~/local/bin/DistributionTool -b -i \"${PROJECT_DIR}/com.yourdomain.applescripttemplate.sdPlugin\" -o \"${PROJECT_DIR}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		39657B0827F4DB72009EBE47 /* Sources */ = {
@@ -482,8 +506,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/StreamDeckPlugin/Vendor/SocketRocket\"";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/carledwards/dev/github/streamdeck-applescript-template-plugin/StreamDeckPlugin/StreamDeckPlugin-Bridging-Header.h";
+				PRODUCT_NAME = appleScriptTemplateSDPlugin;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/carledwards/dev/github/streamdeck-applescript-template-plugin/StreamDeckPlugin/Vendor/StreamDeck/StreamDeckPlugin-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -493,9 +517,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEPLOYMENT_LOCATION = NO;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/StreamDeckPlugin/Vendor/SocketRocket\"";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/carledwards/dev/github/streamdeck-applescript-template-plugin/StreamDeckPlugin/StreamDeckPlugin-Bridging-Header.h";
+				PRODUCT_NAME = appleScriptTemplateSDPlugin;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/carledwards/dev/github/streamdeck-applescript-template-plugin/StreamDeckPlugin/Vendor/StreamDeck/StreamDeckPlugin-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

@@ -23,7 +23,8 @@ struct StreamDeckPlugin: ParsableCommand {
         var info: String
 
     mutating func run() throws {
-        let _: ESDConnectionManager = ESDConnectionManager(port: port, andPluginUUID: pluginUUID, andRegisterEvent: registerEvent, andInfo: info, andDelegate: Plugin())
-        RunLoop.current.run()
+        let plugin: ESDEventsProtocol = Plugin()
+        let connectionManager: ESDConnectionManager = ESDConnectionManager(port: port, andPluginUUID: pluginUUID, andRegisterEvent: registerEvent, andInfo: info, andDelegate: plugin)
+        CFRunLoopRun()
     }
 }
