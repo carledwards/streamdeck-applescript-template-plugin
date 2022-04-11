@@ -19,7 +19,12 @@ class Plugin: NSObject, ESDEventsProtocol {
         print("keyDown")
         connectionManager?.logMessage("keyDown")
         
-//        let source = "display notification \"You pressed a button\" with title \"Stream Deck\" subtitle \"Congratulations!\" sound name \"Frog\""
+        // NOTE: If your script isn't working, try looking here:
+        //   * AppleScript is very particular to the formatting of the script, check for the error below being logged
+        //   * Verify/reset the Stream Decks security permissions:
+        //     - look here: System Prefences->Security & Privacy->Privacy (tab)->Automation (list item)->Stream Deck
+        //     - reset previous security asks: "sudo tccutil reset All com.elgato.StreamDeck"
+        //       use is with caution as all permissions are removed and will be re-challenged
         let source = """
         tell application "Safari"
             activate
