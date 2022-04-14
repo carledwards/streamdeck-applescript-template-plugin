@@ -38,6 +38,10 @@ class Plugin: NSObject, ESDEventsProtocol {
             script.executeAndReturnError(&error)
             if let err = error {
                 connectionManager?.logMessage("Error executing AppleScript: \(err)")
+                connectionManager?.showAlert(context: event.context)
+            }
+            else {
+                connectionManager?.showOK(context: event.context)
             }
         }
     }
@@ -48,12 +52,10 @@ class Plugin: NSObject, ESDEventsProtocol {
 
     func willAppear(event: KeyEvent, settings: JSON) {
         connectionManager?.logDebugMessage("plugin recieved willAppear: \(event), settings: \(settings)")
-        connectionManager?.setTitle(title: "Hello", context: event.context)
     }
     
     func willDisappear(event: KeyEvent, settings: JSON) {
         connectionManager?.logDebugMessage("plugin recieved willDisappear: \(event), settings: \(settings)")
-        connectionManager?.setTitle(title: "Goodbye", context: event.context)
     }
 
     func deviceDidConnect(event: DeviceDidConnectEvent) {

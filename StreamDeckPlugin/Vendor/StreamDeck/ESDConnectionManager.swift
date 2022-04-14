@@ -32,6 +32,11 @@ struct SetTitle: Codable {
     let payload: Payload
 }
 
+struct ShowForContext: Codable {
+    let event: String
+    let context: String
+}
+
 class ESDConnectionManager: NSObject {
     var port: Int
     var pluginUUID: String
@@ -197,20 +202,16 @@ class ESDConnectionManager: NSObject {
 
     }
 
-    func showAlert(forContext inContext: Any?) {
-        // TODO implement
-//        NSDictionary *json = @{
-//                       @kESDSDKCommonEvent: @kESDSDKEventShowAlert,
-//                       @kESDSDKCommonContext: inContext,
-//                       };
+    func showAlert(context: String) {
+        let obj = ShowForContext(event: "showAlert", context: context)
+        let data = try! JSONEncoder().encode(obj)
+        self.sendData(data)
     }
 
-    func showOK(forContext inContext: Any?) {
-        // TODO implement
-//        NSDictionary *json = @{
-//                       @kESDSDKCommonEvent: @kESDSDKEventShowOK,
-//                       @kESDSDKCommonContext: inContext,
-//                       };
+    func showOK(context: String) {
+        let obj = ShowForContext(event: "showOk", context: context)
+        let data = try! JSONEncoder().encode(obj)
+        self.sendData(data)
     }
 
     func setSettings(_ inSettings: [AnyHashable : Any]?, forContext inContext: Any?) {

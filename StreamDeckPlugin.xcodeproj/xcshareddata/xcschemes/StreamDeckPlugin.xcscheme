@@ -52,7 +52,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-pluginUUID 021EFCB6ED7045247431D774D501C143"
+            argument = "-pluginUUID 568E03E7A96760EDCCF02C4330FD08EC"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
