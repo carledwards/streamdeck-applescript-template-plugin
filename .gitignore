@@ -92,4 +92,9 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+# vi swap files
+*.swp
+
+# generated binaries
 com.yourdomain.applescripttemplate.streamDeckPlugin
+com.yourdomain.applescripttemplate.sdPlugin/appleScriptTemplateSDPlugin
