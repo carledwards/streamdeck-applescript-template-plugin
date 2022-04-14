@@ -52,11 +52,11 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-port 28196"
+            argument = "-pluginUUID 021EFCB6ED7045247431D774D501C143"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-pluginUUID 59A9258AAB5CFCEA52066ED94D5F33CC"
+            argument = "-port 28196"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -64,7 +64,11 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-info {&quot;application&quot;:{&quot;font&quot;:&quot;.AppleSystemUIFont&quot;,&quot;language&quot;:&quot;en&quot;,&quot;platform&quot;:&quot;mac&quot;,&quot;platformVersion&quot;:&quot;12.3.1&quot;,&quot;version&quot;:&quot;5.2.1.15025&quot;},&quot;colors&quot;:{&quot;buttonPressedBackgroundColor&quot;:&quot;#303030FF&quot;,&quot;buttonPressedBorderColor&quot;:&quot;#646464FF&quot;,&quot;buttonPressedTextColor&quot;:&quot;#969696FF&quot;,&quot;disabledColor&quot;:&quot;#007AFF7F&quot;,&quot;highlightColor&quot;:&quot;#007AFFFF&quot;,&quot;mouseDownColor&quot;:&quot;#2EA8FFFF&quot;},&quot;devicePixelRatio&quot;:1,&quot;devices&quot;:[{&quot;id&quot;:&quot;3C12F41C35DACAA63A82AA03AA0BFC3E&quot;,&quot;name&quot;:&quot;Stream Deck&quot;,&quot;size&quot;:{&quot;columns&quot;:5,&quot;rows&quot;:3},&quot;type&quot;:0}],&quot;plugin&quot;:{&quot;uuid&quot;:&quot;com.lostdomain.zoom&quot;,&quot;version&quot;:&quot;3.0&quot;}}"
+            argument = "-info &apos;{&quot;application&quot;:{&quot;font&quot;:&quot;.AppleSystemUIFont&quot;,&quot;language&quot;:&quot;en&quot;,&quot;platform&quot;:&quot;mac&quot;,&quot;platformVersion&quot;:&quot;12.3.1&quot;,&quot;version&quot;:&quot;5.2.1.15025&quot;},&quot;colors&quot;:{&quot;buttonPressedBackgroundColor&quot;:&quot;#303030FF&quot;,&quot;buttonPressedBorderColor&quot;:&quot;#646464FF&quot;,&quot;buttonPressedTextColor&quot;:&quot;#969696FF&quot;,&quot;disabledColor&quot;:&quot;#007AFF7F&quot;,&quot;highlightColor&quot;:&quot;#007AFFFF&quot;,&quot;mouseDownColor&quot;:&quot;#2EA8FFFF&quot;},&quot;devicePixelRatio&quot;:1,&quot;devices&quot;:[{&quot;id&quot;:&quot;3C12F41C35DACAA63A82AA03AA0BFC3E&quot;,&quot;name&quot;:&quot;Stream Deck&quot;,&quot;size&quot;:{&quot;columns&quot;:5,&quot;rows&quot;:3},&quot;type&quot;:0}],&quot;plugin&quot;:{&quot;uuid&quot;:&quot;com.yourdomain.applescripttemplate&quot;,&quot;version&quot;:&quot;1.0.0&quot;}}&apos;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-verbose"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

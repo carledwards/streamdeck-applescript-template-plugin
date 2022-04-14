@@ -9,9 +9,12 @@ import Foundation
 import ArgumentParser
 
 @main
-struct StreamDeckPlugin: ParsableCommand {
+struct StreamDeckPlugin: ParsableCommand, ESDApplicationStateProtocol {
+    @Flag(name: .customLong("verbose", withSingleDash: true))
+    var verbose = false
+
     @Option(name: .customLong("port", withSingleDash: true))
-        var port: Int32
+        var port: Int
 
     @Option(name: .customLong("pluginUUID", withSingleDash: true))
         var pluginUUID: String
@@ -22,9 +25,15 @@ struct StreamDeckPlugin: ParsableCommand {
     @Option(name: .customLong("info", withSingleDash: true))
         var info: String
 
+    func socketClosed() {
+        print("socket was closed by host, maybe another instances is already registered?  Check the logs at: ~/Library/Logs/StreamDeck/")
+        CFRunLoopStop(CFRunLoopGetCurrent())
+    }
+
     mutating func run() throws {
         let plugin: ESDEventsProtocol = Plugin()
-        let connectionManager: ESDConnectionManager = ESDConnectionManager(port: port, andPluginUUID: pluginUUID, andRegisterEvent: registerEvent, andInfo: info, andDelegate: plugin)
+        let connectionManager: ESDConnectionManager = ESDConnectionManager(port: port, pluginUUID: pluginUUID, registerEvent: registerEvent, info: info, pluginDelegate: plugin, applicationStateDelegate: self, debug: verbose)
+        connectionManager.connect()
         CFRunLoopRun()
     }
 }
